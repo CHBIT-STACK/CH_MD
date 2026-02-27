@@ -1,0 +1,110 @@
+{
+  "name": "CH-MD",
+  "version": "1.0.0",
+  "description": "CH MD, a Simple WhatsApp Bot built with NodeJs to Enhance WhatsApp Communication experience",
+  "website": "https://files.catbox.moe/ykdtkm.jpeg",
+  "logo": "https://files.catbox.moe/w3k9sq.jpg",
+  "keywords": ["CH-MD", "Whatsapp bot", "Bot", "CH-MD BOT"],
+  "repository": "https://github.com/mr_professor/CH-MD",
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put your Session CH_MD~ID here",
+      "value": "",
+      "required": true
+    },
+    "SUDO_NUMBERS": {
+      "description": "Add multiple numbers with country code without (+), separated by comma",
+      "value": "923038732135",
+      "required": false
+    },
+    "ANTI_DELETE": {
+      "description": "Enable anti-delete (true/false)",
+      "value": "true",
+      "required": true
+    },
+    "AUTO_STATUS_VIEWS": {
+      "description": "Auto mark status as seen",
+      "value": "true",
+      "required": true
+    },
+    "AUTO_STATUS_REACTS": {
+      "description": "Auto react on status",
+      "value": "true",
+      "required": false
+    },
+     "OWNER_NUMBER": {
+      "description": "Bot owner number",
+      "value": "923038732135",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Owner display name",
+      "value": "THE MR PROFESSR",
+      "required": true
+    },
+    "AUTO_STATUS_EMOJIS": {
+      "description": "Custom emojis for auto status reactions",
+      "value": "🦋,🍥,🍧,🍨,🍫,🍭,🎀,🎐,🎗️,👑,🇵🇰,🍓,🍇,🧃",
+      "required": false
+    },
+    "AUTO_STATUS_REPLY": {
+      "description": "Reply to viewed statuses",
+      "value": "false",
+      "required": false
+    },
+    "MODE": {
+      "description": "Bot mode: public, private, inbox, groups",
+      "value": "public",
+      "required": true
+    },
+    "PACK_NAME": {
+      "description": "Sticker pack name",
+      "value": "мα∂є ву CH-м∂",
+      "required": false
+    },
+    "PREFIX": {
+      "description": "Command prefix",
+      "value": ".",
+      "required": true
+    },
+    "ANTI_CALL": {
+      "description": "Anti-call feature",
+      "value": "false",
+      "required": false
+    },    
+    "ANTI_CALL_MSG": {
+      "description": "Message when someone calls bot",
+      "value": "*📞 ᴄαℓℓ ɴσт αℓℓσωє∂ 📵*",
+      "required": false
+    }, 
+    "BOT_NAME": {
+      "description": "Bot name display",
+      "value": "𓆩ု᪳CH-𝐌𝐃ှ᪳𓆪",
+      "required": true
+    },
+    "BOT_PIC": {
+      "description": "put Bot menu picture URL",
+      "value": "https://files.catbox.moe/w3k9sq.jpg",
+      "required": true
+    },
+    "PRESENCE": {
+      "description": "Presence type (typing/recording/online/null)",
+      "value": "null",
+      "required": false
+    },
+    "TIME_ZONE": {
+      "description": "Your timezone",
+      "value": "Asia/Karachi",
+      "required": true
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
